@@ -1,0 +1,586 @@
+html, body {
+  box-sizing: border-box;
+  background-color: #037f42;
+  font-family: "avenir", Helvetica, Arial, Sans-Serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-size: 24px;
+  color: #244024;
+  text-align: center;
+  position: relative;
+
+}
+
+h1 {
+  color: black;
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+}
+h4 {
+  position: relative;
+  color: black;
+  text-align: center;
+}
+p {
+  //text-align: center;
+  color: #244024;
+  font-size: 14px;
+  position: relative;
+  text-align:center;
+}
+
+a {
+  text-decoration: none;
+  color: #244024;
+
+  &:hover {
+      color: #9c9c9c;
+
+    &:active {
+
+        color: #244024;
+
+        &:visited {
+
+          color: #244024;
+
+        }
+      }
+    }
+}
+
+
+$br: 10px;
+$fl: left;
+$color1: #037F42;
+$color2: #D2E1F2;
+$margin: 2px;
+
+@mixin page ($height: 1300px) {
+ margin: 0 auto;
+ padding: 6px 6px 0 6px;
+ width: 1050px;
+ height: $height;
+ background: #D2E1F2;
+ border-radius: $br;
+}
+
+.main_page {
+  @include page ($height: 1300px);
+}
+
+.header {
+  position: relative;
+  width: 99%;
+  height: 320px;
+  border: 4px solid $color1;
+  border-radius: $br;
+}
+
+.smile_right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/Dentistry_Photo.jpg);
+  margin: 0 auto;
+  border-radius: $br;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.picture--title {
+  position: absolute;
+  margin: 30px 10px 30px 10px;
+  width: 514px;
+  height: 200px;
+  z-index: 2;
+  border: 4px solid $color1;
+  border-radius: $br;
+  text-align: center;
+  background-color: #E5CA75;
+
+}
+
+.navtext {
+  position: relative;
+  top: 270px;
+  margin: 0 14px 0 14px;
+  font: normal bold 20px Avenir, serif;
+  color: #244024;
+  border: 2px solid;
+  border-top: #9C9C9C;
+  border-right: #9C9C9C;
+  border-left: #9C9C9C;
+  z-index: 2;
+
+
+  &:hover {
+      color: #9c9c9c;
+
+    &:active {
+
+        color: #244024;
+
+       }
+    }
+}
+
+//test code
+
+@mixin container($background, $margin: 2px, $width: 320px, $height: 220px) {
+  position: relative;
+  border-radius: $br;
+  float: $fl;
+  background-color: $background;
+  width: $width;
+  height: $height;
+  margin: $margin;
+}
+
+.sectionwrap_pictures {
+  margin: 10px auto;
+  width: 990px;
+  height: 230px;
+}
+
+.picture_container1 {
+  @include container ($color2);
+  border: 3px solid $color1;
+}
+
+.picture_container2 {
+  @include container ($color2);
+  border: 3px solid $color1;
+}
+
+.picture_container3 {
+  @include container ($color2);
+  border: 3px solid $color1;
+}
+
+.sectionwrap_text{
+  width: 990px;
+  height: 230px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.picture_text_left  {
+  @include container (#D2E1F2);
+
+}
+
+.picture_text_middle {
+  @include container (#D2E1F2);
+  left: 8px;
+
+}
+
+.picture_text_right {
+  @include container (#D2E1F2);
+  left: 14px;
+}
+
+.licences {
+  font-size: 12px;
+}
+
+.banner_break {
+  width: 98%;
+  height: 10%;
+  border: 5px solid $color1;
+  border-radius: $br;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main_footer {
+  text-align: center;
+}
+
+.container4{
+  @include container ($color2);
+  background: url(images/shiny-tooth.png)  bottom center no-repeat;
+  left: 2%;
+}
+
+.container5{
+  @include container($color2);
+  background: url(images/teeth-protection.png)  bottom center no-repeat;
+  left: 2%;
+}
+
+.container6 {
+  @include container($color2);
+  background: url(images/book-appointment.png)  bottom center no-repeat;
+  left: 2%;
+}
+
+//Family Dentistry code -- "container" sass will be used for this page.
+
+.family_dentistry_page {
+  @include page ($height: 2100px);
+}
+
+.cleaning {
+  @include container ($color2, $height: 150px);
+  left: 2%;
+  top: 10px;
+  background: url(images/toothbrush.png)  top 10px left no-repeat;
+  text-align: center;
+}
+
+.checkups {
+  @include container ($color2, $height: 150px);
+  left: 4%;
+  top: 10px;
+  background: url(images/dentist-tools.png)  top 10px left no-repeat;
+  text-align: center;
+}
+
+.procedures {
+  @include container ($color2, $width: 330px, $height: 160px);
+  left: 2%;
+  top: 10px;
+  background: url(images/clipboard.png)  top 10px left no-repeat;
+}
+
+
+.experience {
+  @include container ($color2, $width: 330px);
+  left: 2%;
+  top: 30px;
+  background: url(images/zoom-on-tooth.png)  top left no-repeat;
+  text-align: center;
+}
+
+.qualified {
+  @include container ($color1, $width: 330px);
+  left: 2%;
+  background: url(images/tooth.png) top 20px center no-repeat;
+}
+
+.box_oralcancer {
+  position: relative;
+  width: 99%;
+  height: 200px;
+  float: $fl;
+  border: 4px solid green;
+  border-radius: $br;
+  text-align: center;
+}
+
+.oralcancer_text {
+  position: absolute;
+  z-index: 2;
+  left: 15%;
+}
+
+.protection_one {
+  @include container ($color2, $width: 330px, $height: 200px);
+  background: url(images/protection_one.png) left no-repeat;
+  opacity: 0.4;
+  z-index: 1;
+
+}
+
+.protection_two {
+  @include container ($color2, $width: 350px, $height: 200px);
+  background: url(images/protection_two.jpg) center no-repeat;
+  opacity: 0.4;
+  z-index: 1;
+  left: 6px;
+
+}
+
+.protection_three {
+  @include container ($color2, $width: 340px, $height: 200px);
+  background: url(images/protection_three.jpg) center right no-repeat;
+  opacity: 0.4;
+  z-index: 1;
+  left: 10px;
+}
+
+.symptoms {
+  @include container ($color2, $width: 330px, $height: 340px );
+  left: 2%;
+}
+
+.prevent {
+  @include container ($color2, $width: 330px, $height: 160px);
+}
+
+.protect {
+  @include container ($color2, $width: 330px, $height: 160px);
+  left: 2%;
+}
+
+.talk_dentist {
+  @include container ($color2, $width: 360px, $height: 150px);
+}
+
+.healthyteeth {
+  @include container ($color2, $width: 340px, $height: 320px);
+  background: url(images/teeth-health.png) center no-repeat;
+}
+
+.sleep_apnea {
+  position: relative;
+  width: 99%;
+  height: 200px;
+  float: $fl;
+  border: 4px solid green;
+  border-radius: $br;
+  text-align: center;
+}
+
+.apnea_text {
+  position: absolute;
+  z-index: 2;
+  left: 15%;
+}
+
+.apnea_left {
+  @include container ($color2, $width: 340px, $height: 200px);
+  background: url(images/apnea_left.jpg) left no-repeat;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.apnea_center {
+  @include container ($color2, $width: 350px, $height: 200px, $margin:0px);
+  background: url(images/apnea_center.jpg) center no-repeat;
+  opacity: 0.4;
+  z-index: 1;
+  left: 6px;
+}
+
+.apnea_right {
+  @include container ($color2, $width: 330px, $height: 200px);
+  background: url(images/apnea_right.jpg) center right no-repeat;
+  opacity: 0.4;
+  z-index: 1;
+  left: 10px;
+}
+
+// Bottom of page
+
+.sleepapnea {
+  @include container ($color1, $height: 280px, $width: 30%);
+  background: url(images/resting-face.png) bottom 6px center no-repeat;
+
+}
+
+.silentnite {
+  @include container ($color2, $height: 250px, $width: 30%);
+  left: 4%;
+}
+
+.apnea_effects {
+  @include container ($color2, $height: 280px, $width: 30%);
+  background: url(images/camping.png) bottom 6px center no-repeat;
+  left: 6%;
+}
+
+
+.why {
+  @include container ($color2, $height: 220px);
+}
+
+.moon_picture {
+  @include container ($color2, $height: 220px, $width: 390px);
+  top: 80px;
+  background: url(images/moon.png) top center no-repeat;
+}
+
+.dangerous {
+  @include container ($color2, $height: 220px);
+  float: right;
+}
+
+//beginning of doctors page
+
+.testbox {
+  border-radius: $br;
+  width: 1050px;
+  height: 400px;
+  background: url(images/doctor/doctor_smiles.jpg) center no-repeat;
+}
+
+//beginning of technology page
+
+.technology_page {
+  @include page ($height: 1900px);
+}
+
+
+.invisilign {
+  position: relative;
+  width: 99%;
+  height: 204px;
+  border: 4px solid green;
+  border-radius: $br;
+  margin: 10px auto;
+}
+
+.invisilign_text {
+  position: absolute;
+  z-index: 2;
+}
+
+.invisilign_left {
+  @include container ($color2, $width: 33%, $height: 200px);
+  background: url(images/invisilign_center.jpg) left no-repeat;
+  //opacity: 0.4;
+  z-index: 1;
+
+}
+
+.straighten {
+  top: 10px;
+  left: 325px
+
+}
+
+.qualify {
+  top: 38px;
+  left: 200px;
+}
+
+.invisilign_center {
+  @include container ($color2, $width: 33%, $height: 200px);
+  background: url(images/invisilign_right.jpg) center no-repeat;
+  //opacity: 0.4;
+  z-index: 1;
+  left: 6px;
+
+}
+
+.invisilign_right {
+  @include container ($color2, $width: 32%, $height: 200px);
+  background: url(images/invisilign_left.jpg) center right no-repeat;
+  //opacity: 0.4;
+  z-index: 1;
+  left: 10px;
+
+}
+
+.invisilign_information {
+  position: relative;
+  width: 100%;
+  height: 300px;
+
+}
+
+.invisilign_text_one {
+  @include container ($color2, $width: 33%, $height: 300px);
+}
+
+.invisilign_text_two {
+  @include container ($color2, $width: 33%, $height: 300px);
+  left: 2px;
+}
+
+.invisilign_text_three {
+  @include container ($color2, $width: 32%, $height: 300px);
+  left: 4px;
+}
+
+.diagnodent {
+  position: relative;
+  width: 99%;
+  height: 200px;
+  border: 4px solid green;
+  border-radius: $br;
+}
+
+.diagnodent_left {
+  @include container ($color2, $width: 33%, $height: 200px);
+  background: url(images/diagnodent.jpg) top left no-repeat;
+}
+
+.diagnodent_text {
+  position: absolute;
+}
+
+.preserve {
+  text-align: center;
+}
+
+.ask {
+  position: relative;
+  left: 50px;
+}
+
+.diagnodent_information {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.diagnodent_text_one {
+  @include container ($color2, $width: 33%, $height: 300px);
+}
+
+.diagnodent_text_two {
+  @include container ($color2, $width: 33%, $height: 300px);
+}
+
+.diagnodent_text_three {
+  @include container ($color2, $width: 32%, $height: 300px);
+}
+
+.radiography {
+  position: relative;
+  width: 99%;
+  height: 200px;
+  border: 4px solid green;
+  border-radius: $br;
+  text-align: center;
+}
+
+.radiography_left {
+  @include container ($color2, $width: 33%, $height: 200px);
+  background: url(images/digital_radiography.jpg) top left no-repeat;
+}
+
+.radiography_information {
+  position: relative;
+  width: 690px;
+  height: 300px;
+  //background-color: green;
+  margin: 0 auto;
+
+}
+
+.radiography_text_one {
+  @include container ($color2, $width: 340px, $height: 200px);
+}
+
+.radiography_text_two {
+  @include container ($color2, $width: 340px, $height: 200px);
+}
+
+
+//cosmetic page
+
+.cosmetic_header {
+  width: 99%;
+  height: 200px;
+  border: 4px solid $color2;
+}
+
+.cosmetic_page {
+  margin: 0 auto;
+  padding: 6px 6px 0 6px;
+  width: 1050px;
+  height: 1050px;
+  //min-height: 1300px;
+  background: #D2E1F2;
+  border-radius: $br;
+}
