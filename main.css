@@ -26,8 +26,7 @@ h4 {
 p {
   color: #244024;
   font-size: 14px;
-  position: relative;
-  text-align: center; }
+  position: relative; }
 
 a {
   text-decoration: none;
@@ -707,5 +706,43 @@ a {
   height: 1050px;
   background: #D2E1F2;
   border-radius: 10px; }
+
+.contact_information {
+  width: 48%;
+  padding-left: 20px;
+  float: left; }
+
+.map_information {
+  width: 50%;
+  height: 400px;
+  background-color: blue;
+  float: left; }
+
+.certificates {
+  float: left;
+  width: 520px;
+  height: 400px;
+  background-color: purple; }
+
+.ada {
+  background: url(images/ada.png) left no-repeat;
+  width: 200px;
+  height: 100px;
+  float: left;
+  margin: 0 auto; }
+
+.aad {
+  background: url(images/aad.png) left no-repeat;
+  width: 300px;
+  height: 100px;
+  float: left;
+  margin: 0 auto; }
+
+.njda {
+  background: url(images/njda.png) left no-repeat;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

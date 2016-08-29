@@ -27,11 +27,10 @@ h4 {
   text-align: center;
 }
 p {
-  //text-align: center;
   color: #244024;
   font-size: 14px;
   position: relative;
-  text-align:center;
+  //text-align:center;
 }
 
 a {
@@ -583,4 +582,52 @@ $margin: 2px;
   //min-height: 1300px;
   background: #D2E1F2;
   border-radius: $br;
+}
+
+//contact information page
+
+.contact_information {
+  //text-align: center;
+  width: 48%;
+  //background-color: green;
+  padding-left: 20px;
+  float: $fl;
+}
+
+.map_information {
+  width: 50%;
+  height: 400px;
+  background-color: blue;
+  float: $fl;
+}
+
+.certificates {
+  float: $fl;
+  width: 520px;
+  height: 400px;
+  background-color: purple;
+}
+
+.ada {
+  background: url(images/ada.png) left no-repeat;
+  width: 200px;
+  height: 100px;
+  float: left;
+  margin: 0 auto;
+}
+
+.aad {
+  background: url(images/aad.png) left no-repeat;
+  width: 300px;
+  height: 100px;
+  float: left;
+  margin: 0 auto;
+}
+
+.njda {
+  background: url(images/njda.png) left no-repeat;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0 auto;
 }
