@@ -26,8 +26,7 @@ h4 {
 p {
   color: #244024;
   font-size: 14px;
-  position: relative;
-  text-align: center; }
+  position: relative; }
 
 a {
   text-decoration: none;
@@ -43,7 +42,7 @@ a {
   margin: 0 auto;
   padding: 6px 6px 0 6px;
   width: 1050px;
-  height: 1400px;
+  height: 1300px;
   background: #D2E1F2;
   border-radius: 10px; }
 
@@ -364,9 +363,10 @@ a {
   border-radius: 10px;
   float: left;
   background-color: #D2E1F2;
-  width: 360px;
+  width: 330px;
   height: 150px;
-  margin: 2px; }
+  margin: 2px;
+  left: 20px; }
 
 .healthyteeth {
   position: relative;
@@ -400,7 +400,7 @@ a {
   width: 340px;
   height: 200px;
   margin: 2px;
-  background: url(images/apnea_.jpg) left no-repeat;
+  background: url(images/apnea_left.jpg) left no-repeat;
   opacity: 0.4;
   z-index: 1; }
 
@@ -438,7 +438,8 @@ a {
   width: 30%;
   height: 280px;
   margin: 2px;
-  background: url(images/resting-face.png) bottom 6px center no-repeat; }
+  background: url(images/resting-face.png) bottom 6px center no-repeat;
+  left: 20px; }
 
 .silentnite {
   position: relative;
@@ -459,7 +460,7 @@ a {
   height: 280px;
   margin: 2px;
   background: url(images/camping.png) bottom 6px center no-repeat;
-  left: 6%; }
+  left: 70px; }
 
 .why {
   position: relative;
@@ -555,7 +556,7 @@ a {
 
 .invisilign_text_one {
   position: relative;
-  border-radius: 10px;
+  border-radius: 0px;
   float: left;
   background-color: #D2E1F2;
   width: 33%;
@@ -580,13 +581,14 @@ a {
 
 .diagnodent_text {
   position: relative;
-  border-radius: 10px;
+  border-radius: 0px;
   float: left;
   background-color: #D2E1F2;
-  width: 32%;
+  width: 31%;
   height: 280px;
   margin: 2px;
-  left: 4px;
+  padding-left: 10px;
+  left: 2px;
   border-style: solid;
   border-width: 2px;
   border-left-color: #037F42;
@@ -614,18 +616,19 @@ a {
 
 .radiography_information {
   position: relative;
-  width: 700px;
+  width: 760px;
   height: 300px;
   margin: 0 auto; }
 
 .radiography_text_one {
   position: relative;
-  border-radius: 10px;
+  border-radius: 0px;
   float: left;
   background-color: #D2E1F2;
   width: 340px;
   height: 200px;
   margin: 2px;
+  padding: 10px;
   border-style: solid;
   border-width: 2px;
   border-left-color: #037F42;
@@ -635,13 +638,14 @@ a {
 
 .radiography_text_two {
   position: relative;
-  border-radius: 10px;
+  border-radius: 0px;
   float: left;
   background-color: #D2E1F2;
   width: 340px;
   height: 200px;
   margin: 2px;
-  right: 4px;
+  padding: 10px;
+  left: 4px;
   border-style: solid;
   border-width: 2px;
   border-left-color: #037F42;
@@ -718,5 +722,8 @@ a {
   height: 100px;
   float: left;
   margin: 0 auto; }
+
+.address {
+  text-align: left; }
 
 /*# sourceMappingURL=main.css.map */
