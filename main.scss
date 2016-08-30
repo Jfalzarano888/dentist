@@ -586,6 +586,11 @@ $margin: 2px;
 
 //contact information page
 
+.contact_page {
+@include page ($height: 1100px);
+
+}
+
 .contact_information {
   //text-align: center;
   width: 48%;
@@ -596,8 +601,8 @@ $margin: 2px;
 
 .map_information {
   width: 50%;
-  height: 400px;
-  background-color: blue;
+  height: 380px;
+  //background-color: blue;
   float: $fl;
 }
 
@@ -605,7 +610,7 @@ $margin: 2px;
   float: $fl;
   width: 520px;
   height: 400px;
-  background-color: purple;
+  //background-color: purple;
 }
 
 .ada {
@@ -627,6 +632,22 @@ $margin: 2px;
 .njda {
   background: url(images/njda.png) left no-repeat;
   width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0 auto;
+}
+
+.general_dentistry {
+  background: url(images/general_dentistry.png) bottom 10px center no-repeat;
+  width: 100px;
+  height: 100px;
+  float: left;
+  //margin: auto;
+}
+
+.lumineers {
+  background: url(images/lumineers.png) left no-repeat;
+  width: 200px;
   height: 100px;
   float: left;
   margin: 0 auto;

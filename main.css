@@ -707,6 +707,14 @@ a {
   background: #D2E1F2;
   border-radius: 10px; }
 
+.contact_page {
+  margin: 0 auto;
+  padding: 6px 6px 0 6px;
+  width: 1050px;
+  height: 1100px;
+  background: #D2E1F2;
+  border-radius: 10px; }
+
 .contact_information {
   width: 48%;
   padding-left: 20px;
@@ -714,15 +722,13 @@ a {
 
 .map_information {
   width: 50%;
-  height: 400px;
-  background-color: blue;
+  height: 380px;
   float: left; }
 
 .certificates {
   float: left;
   width: 520px;
-  height: 400px;
-  background-color: purple; }
+  height: 400px; }
 
 .ada {
   background: url(images/ada.png) left no-repeat;
@@ -741,6 +747,19 @@ a {
 .njda {
   background: url(images/njda.png) left no-repeat;
   width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0 auto; }
+
+.general_dentistry {
+  background: url(images/general_dentistry.png) bottom 10px center no-repeat;
+  width: 100px;
+  height: 100px;
+  float: left; }
+
+.lumineers {
+  background: url(images/lumineers.png) left no-repeat;
+  width: 200px;
   height: 100px;
   float: left;
   margin: 0 auto; }
