@@ -27,10 +27,11 @@ h4 {
   text-align: center;
 }
 p {
+  //text-align: center;
   color: #244024;
   font-size: 14px;
   position: relative;
-  //text-align:center;
+  text-align:center;
 }
 
 a {
@@ -70,7 +71,7 @@ $margin: 2px;
 }
 
 .main_page {
-  @include page ($height: 1300px);
+  @include page ($height: 1400px);
 }
 
 .header {
@@ -223,7 +224,7 @@ $margin: 2px;
 //Family Dentistry code -- "container" sass will be used for this page.
 
 .family_dentistry_page {
-  @include page ($height: 2100px);
+  @include page ($height: 1800px);
 }
 
 .cleaning {
@@ -346,7 +347,7 @@ $margin: 2px;
 
 .apnea_left {
   @include container ($color2, $width: 340px, $height: 200px);
-  background: url(images/apnea_left.jpg) left no-repeat;
+  background: url(images/apnea_.jpg) left no-repeat;
   opacity: 0.4;
   z-index: 1;
 }
@@ -414,11 +415,11 @@ $margin: 2px;
 //beginning of technology page
 
 .technology_page {
-  @include page ($height: 1900px);
+  @include page ($height: 1400px);
 }
 
 
-.invisilign {
+.technology_pictures {
   position: relative;
   width: 99%;
   height: 204px;
@@ -427,49 +428,30 @@ $margin: 2px;
   margin: 10px auto;
 }
 
-.invisilign_text {
-  position: absolute;
-  z-index: 2;
-}
 
-.invisilign_left {
+.invisilign_picture {
   @include container ($color2, $width: 33%, $height: 200px);
-  background: url(images/invisilign_center.jpg) left no-repeat;
-  //opacity: 0.4;
+  background: url(images/invisilign_left.jpg) left no-repeat;
   z-index: 1;
-
 }
 
-.straighten {
-  top: 10px;
-  left: 325px
-
-}
-
-.qualify {
-  top: 38px;
-  left: 200px;
-}
-
-.invisilign_center {
+.oralid_center {
   @include container ($color2, $width: 33%, $height: 200px);
-  background: url(images/invisilign_right.jpg) center no-repeat;
-  //opacity: 0.4;
+  background: url(images/oral_id.jpg) center no-repeat;
   z-index: 1;
   left: 6px;
 
 }
 
-.invisilign_right {
+.diagnodent_picture {
   @include container ($color2, $width: 32%, $height: 200px);
-  background: url(images/invisilign_left.jpg) center right no-repeat;
-  //opacity: 0.4;
+  background: url(images/diagnodent.jpg) center right no-repeat;
   z-index: 1;
   left: 10px;
 
 }
 
-.invisilign_information {
+.technology_information {
   position: relative;
   width: 100%;
   height: 300px;
@@ -480,59 +462,16 @@ $margin: 2px;
   @include container ($color2, $width: 33%, $height: 300px);
 }
 
-.invisilign_text_two {
+.oralid_text {
   @include container ($color2, $width: 33%, $height: 300px);
   left: 2px;
 }
 
-.invisilign_text_three {
+.diagnodent_text {
   @include container ($color2, $width: 32%, $height: 300px);
   left: 4px;
 }
 
-.diagnodent {
-  position: relative;
-  width: 99%;
-  height: 200px;
-  border: 4px solid green;
-  border-radius: $br;
-}
-
-.diagnodent_left {
-  @include container ($color2, $width: 33%, $height: 200px);
-  background: url(images/diagnodent.jpg) top left no-repeat;
-}
-
-.diagnodent_text {
-  position: absolute;
-}
-
-.preserve {
-  text-align: center;
-}
-
-.ask {
-  position: relative;
-  left: 50px;
-}
-
-.diagnodent_information {
-  position: relative;
-  width: 100%;
-  height: 300px;
-}
-
-.diagnodent_text_one {
-  @include container ($color2, $width: 33%, $height: 300px);
-}
-
-.diagnodent_text_two {
-  @include container ($color2, $width: 33%, $height: 300px);
-}
-
-.diagnodent_text_three {
-  @include container ($color2, $width: 32%, $height: 300px);
-}
 
 .radiography {
   position: relative;
@@ -578,13 +517,13 @@ $margin: 2px;
   margin: 0 auto;
   padding: 6px 6px 0 6px;
   width: 1050px;
-  height: 1050px;
+  height: 1350px;
   //min-height: 1300px;
   background: #D2E1F2;
   border-radius: $br;
 }
 
-//contact information page
+//contact page
 
 .contact_page {
 @include page ($height: 1100px);
