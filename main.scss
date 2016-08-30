@@ -459,7 +459,13 @@ $margin: 2px;
 }
 
 .invisilign_text_one {
-  @include container ($color2, $width: 33%, $height: 300px);
+  @include container ($color2, $width: 33%, $height: 280px);
+  border-width: 2px;
+  border-style: solid;
+  border-left-color: $color2;
+  border-top-color: $color2;
+  border-right-color: $color1;
+  border-bottom-color: $color2;
 }
 
 .oralid_text {
@@ -468,8 +474,14 @@ $margin: 2px;
 }
 
 .diagnodent_text {
-  @include container ($color2, $width: 32%, $height: 300px);
+  @include container ($color2, $width: 32%, $height: 280px);
   left: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-left-color: $color1;
+  border-top-color: $color2;
+  border-right-color: $color2;
+  border-bottom-color: $color2;
 }
 
 
@@ -489,7 +501,7 @@ $margin: 2px;
 
 .radiography_information {
   position: relative;
-  width: 690px;
+  width: 700px;
   height: 300px;
   //background-color: green;
   margin: 0 auto;
@@ -498,10 +510,23 @@ $margin: 2px;
 
 .radiography_text_one {
   @include container ($color2, $width: 340px, $height: 200px);
+  border-style: solid;
+  border-width: 2px;
+  border-left-color: $color1;
+  border-top-color: $color2;
+  border-right-color: $color1;
+  border-bottom-color: $color2;
 }
 
 .radiography_text_two {
   @include container ($color2, $width: 340px, $height: 200px);
+  right: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-left-color: $color1;
+  border-top-color: $color2;
+  border-right-color: $color1;
+  border-bottom-color: $color2;
 }
 
 
@@ -517,8 +542,7 @@ $margin: 2px;
   margin: 0 auto;
   padding: 6px 6px 0 6px;
   width: 1050px;
-  height: 1350px;
-  //min-height: 1300px;
+  height: 1150px;
   background: #D2E1F2;
   border-radius: $br;
 }

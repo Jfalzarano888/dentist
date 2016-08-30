@@ -559,8 +559,14 @@ a {
   float: left;
   background-color: #D2E1F2;
   width: 33%;
-  height: 300px;
-  margin: 2px; }
+  height: 280px;
+  margin: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-left-color: #D2E1F2;
+  border-top-color: #D2E1F2;
+  border-right-color: #037F42;
+  border-bottom-color: #D2E1F2; }
 
 .oralid_text {
   position: relative;
@@ -578,9 +584,15 @@ a {
   float: left;
   background-color: #D2E1F2;
   width: 32%;
-  height: 300px;
+  height: 280px;
   margin: 2px;
-  left: 4px; }
+  left: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-left-color: #037F42;
+  border-top-color: #D2E1F2;
+  border-right-color: #D2E1F2;
+  border-bottom-color: #D2E1F2; }
 
 .radiography {
   position: relative;
@@ -602,7 +614,7 @@ a {
 
 .radiography_information {
   position: relative;
-  width: 690px;
+  width: 700px;
   height: 300px;
   margin: 0 auto; }
 
@@ -613,7 +625,13 @@ a {
   background-color: #D2E1F2;
   width: 340px;
   height: 200px;
-  margin: 2px; }
+  margin: 2px;
+  border-style: solid;
+  border-width: 2px;
+  border-left-color: #037F42;
+  border-top-color: #D2E1F2;
+  border-right-color: #037F42;
+  border-bottom-color: #D2E1F2; }
 
 .radiography_text_two {
   position: relative;
@@ -622,7 +640,14 @@ a {
   background-color: #D2E1F2;
   width: 340px;
   height: 200px;
-  margin: 2px; }
+  margin: 2px;
+  right: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-left-color: #037F42;
+  border-top-color: #D2E1F2;
+  border-right-color: #037F42;
+  border-bottom-color: #D2E1F2; }
 
 .cosmetic_header {
   width: 99%;
@@ -633,7 +658,7 @@ a {
   margin: 0 auto;
   padding: 6px 6px 0 6px;
   width: 1050px;
-  height: 1350px;
+  height: 1150px;
   background: #D2E1F2;
   border-radius: 10px; }
 
