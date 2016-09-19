@@ -1,23 +1,729 @@
-/*
-Errno::ENOENT: No such file or directory - main.sass
+html, body {
+  box-sizing: border-box;
+  background-color: #037f42;
+  font-family: "avenir", Helvetica, Arial, Sans-Serif;
+  position: relative;
+  width: 100%;
+  height: 100%; }
 
-Backtrace:
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory - main.sass"; }
+h2 {
+  font-size: 24px;
+  color: #244024;
+  text-align: center;
+  position: relative; }
+
+h1 {
+  color: black;
+  position: relative;
+  font-size: 30px;
+  font-weight: 700; }
+
+h4 {
+  position: relative;
+  color: black;
+  text-align: center; }
+
+p {
+  color: #244024;
+  font-size: 14px;
+  position: relative; }
+
+a {
+  text-decoration: none;
+  color: #244024; }
+  a:hover {
+    color: #9c9c9c; }
+    a:hover:active {
+      color: #244024; }
+      a:hover:active:visited {
+        color: #244024; }
+
+.main_page {
+  margin: 0 auto;
+  padding: 6px 6px 0 6px;
+  width: 1050px;
+  height: 1300px;
+  background: #D2E1F2;
+  border-radius: 10px; }
+
+.header {
+  position: relative;
+  width: 99%;
+  height: 320px;
+  border: 4px solid #037F42;
+  border-radius: 10px; }
+
+.smile_right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/Dentistry_Photo.jpg);
+  margin: 0 auto;
+  border-radius: 10px;
+  opacity: 0.5;
+  z-index: 1; }
+
+.picture--title {
+  position: absolute;
+  margin: 30px 10px 30px 10px;
+  width: 514px;
+  height: 200px;
+  z-index: 2;
+  border: 4px solid #037F42;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #E5CA75; }
+
+.navtext {
+  position: relative;
+  top: 270px;
+  margin: 0 14px 0 14px;
+  font: normal bold 20px Avenir, serif;
+  color: #244024;
+  border: 2px solid;
+  border-top: #9C9C9C;
+  border-right: #9C9C9C;
+  border-left: #9C9C9C;
+  z-index: 2; }
+  .navtext:hover {
+    color: #9c9c9c; }
+    .navtext:hover:active {
+      color: #244024; }
+
+.sectionwrap_pictures {
+  margin: 10px auto;
+  width: 990px;
+  height: 230px; }
+
+.picture_container1 {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 320px;
+  height: 220px;
+  margin: 2px;
+  border: 3px solid #037F42; }
+
+.picture_container2 {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 320px;
+  height: 220px;
+  margin: 2px;
+  border: 3px solid #037F42; }
+
+.picture_container3 {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 320px;
+  height: 220px;
+  margin: 2px;
+  border: 3px solid #037F42; }
+
+.sectionwrap_text {
+  width: 990px;
+  height: 230px;
+  margin: 0 auto;
+  text-align: center; }
+
+.picture_text_left {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 320px;
+  height: 220px;
+  margin: 2px; }
+
+.picture_text_middle {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 320px;
+  height: 220px;
+  margin: 2px;
+  left: 8px; }
+
+.picture_text_right {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 320px;
+  height: 220px;
+  margin: 2px;
+  left: 14px; }
+
+.licences {
+  font-size: 12px; }
+
+.banner_break {
+  width: 98%;
+  height: 10%;
+  border: 5px solid #037F42;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center; }
+
+.main_footer {
+  text-align: center; }
+
+.container4 {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 320px;
+  height: 220px;
+  margin: 2px;
+  background: url(images/shiny-tooth.png) bottom center no-repeat;
+  left: 2%; }
+
+.container5 {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 320px;
+  height: 220px;
+  margin: 2px;
+  background: url(images/teeth-protection.png) bottom center no-repeat;
+  left: 2%; }
+
+.container6 {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 320px;
+  height: 220px;
+  margin: 2px;
+  background: url(images/book-appointment.png) bottom center no-repeat;
+  left: 2%; }
+
+.family_dentistry_page {
+  margin: 0 auto;
+  padding: 6px 6px 0 6px;
+  width: 1050px;
+  height: 1800px;
+  background: #D2E1F2;
+  border-radius: 10px; }
+
+.cleaning {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 320px;
+  height: 150px;
+  margin: 2px;
+  left: 2%;
+  top: 10px;
+  background: url(images/toothbrush.png) top 10px left no-repeat;
+  text-align: center; }
+
+.checkups {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 320px;
+  height: 150px;
+  margin: 2px;
+  left: 4%;
+  top: 10px;
+  background: url(images/dentist-tools.png) top 10px left no-repeat;
+  text-align: center; }
+
+.procedures {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 330px;
+  height: 160px;
+  margin: 2px;
+  left: 2%;
+  top: 10px;
+  background: url(images/clipboard.png) top 10px left no-repeat; }
+
+.experience {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 330px;
+  height: 220px;
+  margin: 2px;
+  left: 2%;
+  top: 30px;
+  background: url(images/zoom-on-tooth.png) top left no-repeat;
+  text-align: center; }
+
+.qualified {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #037F42;
+  width: 330px;
+  height: 220px;
+  margin: 2px;
+  left: 2%;
+  background: url(images/tooth.png) top 20px center no-repeat; }
+
+.box_oralcancer {
+  position: relative;
+  width: 99%;
+  height: 200px;
+  float: left;
+  border: 4px solid green;
+  border-radius: 10px;
+  text-align: center; }
+
+.oralcancer_text {
+  position: absolute;
+  z-index: 2;
+  left: 15%; }
+
+.protection_one {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 330px;
+  height: 200px;
+  margin: 2px;
+  background: url(images/protection_one.png) left no-repeat;
+  opacity: 0.4;
+  z-index: 1; }
+
+.protection_two {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 350px;
+  height: 200px;
+  margin: 2px;
+  background: url(images/protection_two.jpg) center no-repeat;
+  opacity: 0.4;
+  z-index: 1;
+  left: 6px; }
+
+.protection_three {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 340px;
+  height: 200px;
+  margin: 2px;
+  background: url(images/protection_three.jpg) center right no-repeat;
+  opacity: 0.4;
+  z-index: 1;
+  left: 10px; }
+
+.symptoms {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 330px;
+  height: 340px;
+  margin: 2px;
+  left: 2%; }
+
+.prevent {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 330px;
+  height: 160px;
+  margin: 2px; }
+
+.protect {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 330px;
+  height: 160px;
+  margin: 2px;
+  left: 2%; }
+
+.talk_dentist {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 330px;
+  height: 150px;
+  margin: 2px;
+  left: 20px; }
+
+.healthyteeth {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 340px;
+  height: 320px;
+  margin: 2px;
+  background: url(images/teeth-health.png) center no-repeat; }
+
+.sleep_apnea {
+  position: relative;
+  width: 99%;
+  height: 200px;
+  float: left;
+  border: 4px solid green;
+  border-radius: 10px;
+  text-align: center; }
+
+.apnea_text {
+  position: absolute;
+  z-index: 2;
+  left: 15%; }
+
+.apnea_left {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 340px;
+  height: 200px;
+  margin: 2px;
+  background: url(images/apnea_left.jpg) left no-repeat;
+  opacity: 0.4;
+  z-index: 1; }
+
+.apnea_center {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 350px;
+  height: 200px;
+  margin: 0px;
+  background: url(images/apnea_center.jpg) center no-repeat;
+  opacity: 0.4;
+  z-index: 1;
+  left: 6px; }
+
+.apnea_right {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 330px;
+  height: 200px;
+  margin: 2px;
+  background: url(images/apnea_right.jpg) center right no-repeat;
+  opacity: 0.4;
+  z-index: 1;
+  left: 10px; }
+
+.sleepapnea {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #037F42;
+  width: 30%;
+  height: 280px;
+  margin: 2px;
+  background: url(images/resting-face.png) bottom 6px center no-repeat;
+  left: 20px; }
+
+.silentnite {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 30%;
+  height: 250px;
+  margin: 2px;
+  left: 4%; }
+
+.apnea_effects {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 30%;
+  height: 280px;
+  margin: 2px;
+  background: url(images/camping.png) bottom 6px center no-repeat;
+  left: 70px; }
+
+.why {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 320px;
+  height: 220px;
+  margin: 2px; }
+
+.moon_picture {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 390px;
+  height: 220px;
+  margin: 2px;
+  top: 80px;
+  background: url(images/moon.png) top center no-repeat; }
+
+.dangerous {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 320px;
+  height: 220px;
+  margin: 2px;
+  float: right; }
+
+.testbox {
+  border-radius: 10px;
+  width: 1050px;
+  height: 400px;
+  background: url(images/doctor/doctor_smiles.jpg) center no-repeat; }
+
+.technology_page {
+  margin: 0 auto;
+  padding: 6px 6px 0 6px;
+  width: 1050px;
+  height: 1400px;
+  background: #D2E1F2;
+  border-radius: 10px; }
+
+.technology_pictures {
+  position: relative;
+  width: 99%;
+  height: 204px;
+  border: 4px solid green;
+  border-radius: 10px;
+  margin: 10px auto; }
+
+.invisilign_picture {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 33%;
+  height: 200px;
+  margin: 2px;
+  background: url(images/invisilign_left.jpg) left no-repeat;
+  z-index: 1; }
+
+.oralid_center {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 33%;
+  height: 200px;
+  margin: 2px;
+  background: url(images/oral_id.jpg) center no-repeat;
+  z-index: 1;
+  left: 6px; }
+
+.diagnodent_picture {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 32%;
+  height: 200px;
+  margin: 2px;
+  background: url(images/diagnodent.jpg) center right no-repeat;
+  z-index: 1;
+  left: 10px; }
+
+.technology_information {
+  position: relative;
+  width: 100%;
+  height: 300px; }
+
+.invisilign_text_one {
+  position: relative;
+  border-radius: 0px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 33%;
+  height: 280px;
+  margin: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-left-color: #D2E1F2;
+  border-top-color: #D2E1F2;
+  border-right-color: #037F42;
+  border-bottom-color: #D2E1F2; }
+
+.oralid_text {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 33%;
+  height: 300px;
+  margin: 2px;
+  left: 2px; }
+
+.diagnodent_text {
+  position: relative;
+  border-radius: 0px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 31%;
+  height: 280px;
+  margin: 2px;
+  padding-left: 10px;
+  left: 2px;
+  border-style: solid;
+  border-width: 2px;
+  border-left-color: #037F42;
+  border-top-color: #D2E1F2;
+  border-right-color: #D2E1F2;
+  border-bottom-color: #D2E1F2; }
+
+.radiography {
+  position: relative;
+  width: 99%;
+  height: 200px;
+  border: 4px solid green;
+  border-radius: 10px;
+  text-align: center; }
+
+.radiography_left {
+  position: relative;
+  border-radius: 10px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 33%;
+  height: 200px;
+  margin: 2px;
+  background: url(images/digital_radiography.jpg) top left no-repeat; }
+
+.radiography_information {
+  position: relative;
+  width: 760px;
+  height: 300px;
+  margin: 0 auto; }
+
+.radiography_text_one {
+  position: relative;
+  border-radius: 0px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 340px;
+  height: 200px;
+  margin: 2px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-left-color: #037F42;
+  border-top-color: #D2E1F2;
+  border-right-color: #037F42;
+  border-bottom-color: #D2E1F2; }
+
+.radiography_text_two {
+  position: relative;
+  border-radius: 0px;
+  float: left;
+  background-color: #D2E1F2;
+  width: 340px;
+  height: 200px;
+  margin: 2px;
+  padding: 10px;
+  left: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-left-color: #037F42;
+  border-top-color: #D2E1F2;
+  border-right-color: #037F42;
+  border-bottom-color: #D2E1F2; }
+
+.cosmetic_header {
+  width: 99%;
+  height: 200px;
+  border: 4px solid #D2E1F2; }
+
+.cosmetic_page {
+  margin: 0 auto;
+  padding: 6px 6px 0 6px;
+  width: 1050px;
+  height: 1150px;
+  background: #D2E1F2;
+  border-radius: 10px; }
+
+.contact_page {
+  margin: 0 auto;
+  padding: 6px 6px 0 6px;
+  width: 1050px;
+  height: 1100px;
+  background: #D2E1F2;
+  border-radius: 10px; }
+
+.contact_information {
+  width: 48%;
+  padding-left: 20px;
+  float: left; }
+
+.map_information {
+  width: 50%;
+  height: 380px;
+  float: left; }
+
+.certificates {
+  float: left;
+  width: 520px;
+  height: 400px; }
+
+.ada {
+  background: url(images/ada.png) left no-repeat;
+  width: 200px;
+  height: 100px;
+  float: left;
+  margin: 0 auto; }
+
+.aad {
+  background: url(images/aad.png) left no-repeat;
+  width: 300px;
+  height: 100px;
+  float: left;
+  margin: 0 auto; }
+
+.njda {
+  background: url(images/njda.png) left no-repeat;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0 auto; }
+
+.general_dentistry {
+  background: url(images/general_dentistry.png) bottom 10px center no-repeat;
+  width: 100px;
+  height: 100px;
+  float: left; }
+
+.lumineers {
+  background: url(images/lumineers.png) left no-repeat;
+  width: 200px;
+  height: 100px;
+  float: left;
+  margin: 0 auto; }
+
+.address {
+  text-align: left; }
+
+/*# sourceMappingURL=main.css.map */
