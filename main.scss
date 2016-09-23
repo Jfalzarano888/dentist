@@ -60,17 +60,18 @@ $color1: #037F42;
 $color2: #D2E1F2;
 $margin: 2px;
 
-@mixin page ($height: 1300px) {
+@mixin page ($height: 100%, $min-height: 1200px) {
  margin: 0 auto;
  padding: 6px 6px 0 6px;
  width: 1050px;
  height: $height;
+ min-height: $min-height;
  background: #D2E1F2;
  border-radius: $br;
 }
 
 .main_page {
-  @include page ($height: 1300px);
+  @include page;
 }
 
 .header {
@@ -421,7 +422,7 @@ $margin: 2px;
 //beginning of doctors page
 
 .doctors_page {
-  @include page ($height: 1110px);
+  @include page ($height: 100%, $min-height: 1150px);
 }
 
 
@@ -602,18 +603,12 @@ $margin: 2px;
 }
 
 .cosmetic_page {
-  margin: 0 auto;
-  padding: 6px 6px 0 6px;
-  width: 1050px;
-  height: 1250px;
-  background: #D2E1F2;
-  border-radius: $br;
-}
-
+  @include page ($height: 100%, $min-height: 1250px);
+  }
 //contact page
 
 .contact_page {
-@include page ($height: 1100px);
+@include page ($height: 100%, $min-height: 1100px);
 
 }
 
