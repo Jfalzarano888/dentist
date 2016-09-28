@@ -294,26 +294,18 @@ a {
   width: 99%;
   height: 200px;
   float: left;
-  border: 4px solid green;
+  border-style: solid;
+  border-top-color: #037F42;
+  border-bottom-color: #037F42;
+  border-right-color: #D2E1F2;
+  border-left-color: #D2E1F2;
   border-radius: 10px;
   text-align: center; }
 
 .oralcancer_text {
-  position: absolute;
-  z-index: 2;
-  left: 15%; }
-
-.protection_one {
   position: relative;
-  border-radius: 10px;
-  float: left;
-  background-color: #D2E1F2;
-  width: 330px;
-  height: 200px;
-  margin: 2px;
-  background: url(images/protection_one.png) left no-repeat;
-  opacity: 0.4;
-  z-index: 1; }
+  margin: 0 auto;
+  padding-top: 30px; }
 
 .protection_two {
   position: relative;
@@ -321,12 +313,9 @@ a {
   float: left;
   background-color: #D2E1F2;
   width: 350px;
-  height: 200px;
+  height: 194px;
   margin: 2px;
-  background: url(images/protection_two.jpg) center no-repeat;
-  opacity: 0.4;
-  z-index: 1;
-  left: 6px; }
+  background: url(images/protection_two.jpg) center no-repeat; }
 
 .protection_three {
   position: relative;
@@ -334,12 +323,10 @@ a {
   float: left;
   background-color: #D2E1F2;
   width: 340px;
-  height: 200px;
+  height: 194px;
   margin: 2px;
   background: url(images/protection_three.jpg) center right no-repeat;
-  opacity: 0.4;
-  z-index: 1;
-  left: 10px; }
+  float: right; }
 
 .symptoms {
   position: relative;
@@ -397,14 +384,19 @@ a {
   width: 99%;
   height: 200px;
   float: left;
-  border: 4px solid green;
+  border-style: solid;
+  border-top-color: #037F42;
+  border-bottom-color: #037F42;
+  border-right-color: #D2E1F2;
+  border-left-color: #D2E1F2;
   border-radius: 10px;
   text-align: center; }
 
 .apnea_text {
-  position: absolute;
+  position: relative;
+  padding-top: 30px;
   z-index: 2;
-  left: 15%; }
+  margin: 0 auto; }
 
 .apnea_left {
   position: relative;
@@ -412,37 +404,22 @@ a {
   float: left;
   background-color: #D2E1F2;
   width: 340px;
-  height: 200px;
+  height: 194px;
   margin: 2px;
   background: url(images/apnea_left.jpg) left no-repeat;
-  opacity: 0.4;
   z-index: 1; }
-
-.apnea_center {
-  position: relative;
-  border-radius: 10px;
-  float: left;
-  background-color: #D2E1F2;
-  width: 350px;
-  height: 200px;
-  margin: 0px;
-  background: url(images/apnea_center.jpg) center no-repeat;
-  opacity: 0.4;
-  z-index: 1;
-  left: 6px; }
 
 .apnea_right {
   position: relative;
   border-radius: 10px;
   float: left;
   background-color: #D2E1F2;
-  width: 330px;
-  height: 200px;
+  width: 350px;
+  height: 194px;
   margin: 2px;
   background: url(images/apnea_right.jpg) center right no-repeat;
-  opacity: 0.4;
   z-index: 1;
-  left: 10px; }
+  float: right; }
 
 .sleepapnea {
   position: relative;
