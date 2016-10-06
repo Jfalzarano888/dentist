@@ -31,6 +31,7 @@ p {
   font-size: 14px;
   position: relative;
   font-weight: 500;
+
 }
 
 a {
@@ -40,18 +41,9 @@ a {
   &:hover {
       color: #9c9c9c;
 
-    &:active {
-
-        color: #244024;
-
-        &:visited {
-
-          color: #244024;
-
-        }
-      }
-    }
+   }
 }
+
 
 
 $br: 10px;
@@ -111,24 +103,14 @@ $margin: 2px;
   top: 270px;
   margin: 0 14px 0 14px;
   font: normal bold 20px Avenir, serif;
-  color: #244024;
-  border: 2px solid;
-  border-top: #9C9C9C;
-  border-right: #9C9C9C;
-  border-left: #9C9C9C;
   z-index: 2;
-
-
-  &:hover {
-      color: #9c9c9c;
-
-    &:active {
-
-        color: #244024;
-
-       }
-    }
 }
+
+.indicator {
+  color: #9C9C9C ;
+}
+
+
 
 //test code
 
@@ -173,24 +155,34 @@ $margin: 2px;
 .picture_text_left  {
   @include container (#D2E1F2);
   line-height: 22px;
+  right: 20px;
+  text-align: center;
+
 
 }
 
 .picture_text_middle {
   @include container (#D2E1F2);
-  left: 8px;
+  left: 4px;
   line-height: 22px;
+  text-align: center;
+
+
+
 
 }
 
 .picture_text_right {
   @include container (#D2E1F2);
-  left: 14px;
+  left: 22px;
   line-height: 22px;
+  text-align: center;
+
 }
 
-.licences {
+.licenses {
   font-size: 12px;
+  font-weight: 500;
 }
 
 .banner_break {
@@ -211,6 +203,7 @@ $margin: 2px;
   background: url(images/shiny-tooth.png)  bottom center no-repeat;
   left: 2%;
   line-height: 22px;
+  text-align: center;
 }
 
 .container5{
@@ -218,6 +211,7 @@ $margin: 2px;
   background: url(images/teeth-protection.png)  bottom center no-repeat;
   left: 2%;
   line-height: 22px;
+  text-align: center;
 }
 
 .container6 {
@@ -225,6 +219,7 @@ $margin: 2px;
   background: url(images/book-appointment.png)  bottom center no-repeat;
   left: 4%;
   line-height: 22px;
+  text-align: center;
 }
 
 //Family Dentistry code -- "container" sass will be used for this page.
@@ -237,9 +232,10 @@ $margin: 2px;
   @include container ($color2, $height: 150px);
   left: 2%;
   top: 10px;
-  background: url(images/toothbrush.png)  top 10px left no-repeat;
+  background: url(images/toothbrush.png)  top 10px left -10px no-repeat;
   text-align: center;
   line-height: 22px;
+  text-align: center;
 }
 
 .checkups {
@@ -249,6 +245,7 @@ $margin: 2px;
   background: url(images/dentist-tools.png)  top 10px left no-repeat;
   text-align: center;
   line-height: 22px;
+  text-align: center;
 }
 
 .procedures {
@@ -256,22 +253,25 @@ $margin: 2px;
   left: 2%;
   top: 10px;
   background: url(images/clipboard.png)  top 10px left no-repeat;
+  font-weight: 500;
 }
 
 
 .experience {
-  @include container ($color2, $width: 330px);
+  @include container ($color2, $width: 340px);
   left: 2%;
   top: 30px;
-  background: url(images/zoom-on-tooth.png)  top left no-repeat;
+  background: url(images/zoom-on-tooth.png)  top left -10px no-repeat;
   text-align: center;
   line-height: 22px;
+  text-align: center;
 }
 
 .qualified {
   @include container ($color1, $width: 330px);
   left: 2%;
   background: url(images/tooth.png) top 20px center no-repeat;
+  text-align: center;
 }
 
 .box_oralcancer {
@@ -309,23 +309,27 @@ $margin: 2px;
 
 .symptoms {
   @include container ($color2, $width: 330px, $height: 340px );
-  left: 2%;
+  //left: 2%;
+  font-weight: 500;
 }
 
 .prevent {
   @include container ($color2, $width: 330px, $height: 160px);
+  text-align: center;
 }
 
 .protect {
   @include container ($color2, $width: 330px, $height: 186px);
   left: 2%;
   line-height: 22px;
+  text-align: center;
 }
 
 .talk_dentist {
   @include container ($color2, $width: 330px, $height: 150px);
   left: 20px;
   line-height: 22px;
+  text-align: center;
 }
 
 .healthyteeth {
@@ -375,6 +379,7 @@ $margin: 2px;
   background: url(images/resting-face.png) bottom 6px center no-repeat;
   left: 20px;
   line-height: 22px;
+  text-align: center;
 
 }
 
@@ -382,6 +387,7 @@ $margin: 2px;
   @include container ($color2, $height: 250px, $width: 30%);
   left: 4%;
   line-height: 22px;
+  text-align: center;
 }
 
 .apnea_effects {
@@ -389,11 +395,13 @@ $margin: 2px;
   background: url(images/camping.png) bottom 6px center no-repeat;
   left: 70px;
   line-height: 22px;
+  text-align: center;
 }
 
 
 .why {
   @include container ($color2, $height: 220px);
+  text-align: center;
 }
 
 .moon_picture {
@@ -417,13 +425,13 @@ $margin: 2px;
 .main_picture {
   border-radius: $br;
   width: 98%;
-  height: 400px;
+  height: 450px;
   background: url(images/doctor/doctor_smiles.jpg) center no-repeat;
   margin: 10px;
 }
 
 .about_wrapper {
-  width: 98%;
+  width: 100%;
   height: 300px;
   margin: 0 auto;
   border-style: solid;
@@ -438,21 +446,26 @@ $margin: 2px;
 }
 
 .about_kaga {
-  @include container ($color2, $height: 300px, $width: 320px, $border-radius: 0px, $margin: 10px);
+  @include container ($color2, $height: 300px, $width: 300px, $border-radius: 0px);
   line-height: 22px;
   font-weight: 600px;
+  text-align: center;
+  margin-left: 60px;
 
 }
 
 .about_grasso {
-  @include container ($color2, $height: 300px, $width: 320px, $border-radius: 0px, $margin: 10px);
+  @include container ($color2, $height: 300px, $width: 310px, $border-radius: 0px);
   line-height: 22px;
-
+  text-align: center;
 }
 
 .hygenists {
-  @include container ($color2, $height: 300px, $width: 320px, $border-radius: 0px, $margin: 10px);
+  @include container ($color2, $height: 300px, $width: 300px, $border-radius: 0px);
   line-height: 22px;
+  text-align: center;
+  margin-left: 60px;
+
 }
 //beginning of technology page
 
@@ -501,33 +514,26 @@ $margin: 2px;
 }
 
 .invisilign_text_one {
-  @include container ($color2, $width: 33%, $height: 280px, $border-radius: 0px);
-  border-width: 2px;
-  border-style: solid;
-  border-left-color: $color2;
-  border-top-color: $color2;
-  border-right-color: $color1;
-  border-bottom-color: $color2;
+  @include container ($color2, $width: 30%, $height: 320px, $border-radius: 0px);
   line-height: 22px;
+  text-align: center;
+  left: 2%;
 }
 
 .oralid_text {
-  @include container ($color2, $width: 33%, $height: 300px);
-  left: 2px;
+  @include container ($color2, $width: 30%, $height: 300px);
+  left: 5%;
   line-height: 22px;
+  text-align: center;
 }
 
 .diagnodent_text {
-  @include container ($color2, $width: 31%, $height: 280px, $border-radius: 0px);
+  @include container ($color2, $width: 30%, $height: 280px, $border-radius: 0px);
   padding-left: 10px;
   left: 2px;
-  border-style: solid;
-  border-width: 2px;
-  border-left-color: $color1;
-  border-top-color: $color2;
-  border-right-color: $color2;
-  border-bottom-color: $color2;
   line-height: 22px;
+  text-align: center;
+  left: 7%;
 }
 
 
@@ -538,6 +544,7 @@ $margin: 2px;
   border: 4px solid green;
   border-radius: $br;
   text-align: center;
+  float: $fl;
 }
 
 .radiography_left {
@@ -553,31 +560,23 @@ $margin: 2px;
 
 }
 
+.imaging {
+  padding-top: 24px;
+}
+
 .radiography_text_one {
-  @include container ($color2, $width: 340px, $height: 200px, $border-radius: 0px);
+  @include container ($color2, $width: 340px, $height: 210px, $border-radius: 0px);
   padding: 10px;
-  padding-top: 20px;
-  border-style: solid;
-  border-width: 2px;
-  border-left-color: $color1;
-  border-top-color: $color2;
-  border-right-color: $color2;
-  border-bottom-color: $color2;
   line-height: 22px;
+  text-align: center;
 }
 
 .radiography_text_two {
-  @include container ($color2, $width: 340px, $height: 210px, $border-radius: 0px);
-  padding-left: 14px;
-  padding-top: 20px;
-  left: 4px;
-  border-style: solid;
-  border-width: 2px;
-  border-left-color: $color1;
-  border-top-color: $color2;
-  border-right-color: $color1;
-  border-bottom-color: $color2;
+  @include container ($color2, $width: 350px, $height: 200px, $border-radius: 0px);
+  padding: 10px;
+  left: 4%;
   line-height: 22px;
+  text-align: center;
 }
 
 
@@ -585,7 +584,7 @@ $margin: 2px;
 
 .cosmetic_header {
   width: 92%;
-  height: 380px;
+  height: 360px;
   border: 4px solid $color2;
   margin: 0 auto;
 }
