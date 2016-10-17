@@ -167,9 +167,6 @@ $margin: 2px;
   line-height: 22px;
   text-align: center;
 
-
-
-
 }
 
 .picture_text_right {
@@ -201,7 +198,7 @@ $margin: 2px;
 .container4{
   @include container ($color2);
   background: url(images/shiny-tooth.png)  bottom center no-repeat;
-  left: 2%;
+  left: 1%;
   line-height: 22px;
   text-align: center;
 }
@@ -209,7 +206,7 @@ $margin: 2px;
 .container5{
   @include container($color2);
   background: url(images/teeth-protection.png)  bottom center no-repeat;
-  left: 2%;
+  left: 3%;
   line-height: 22px;
   text-align: center;
 }
@@ -217,7 +214,7 @@ $margin: 2px;
 .container6 {
   @include container($color2);
   background: url(images/book-appointment.png)  bottom center no-repeat;
-  left: 4%;
+  left: 6%;
   line-height: 22px;
   text-align: center;
 }
